@@ -1,0 +1,259 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+
+
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+    </script>
+    <meta name="keywords" content="User Interface Ui Kit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <!-- start-smoth-scrolling -->
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!--Calender-->
+    <link rel="stylesheet" href="css/clndr.css" type="text/css" />
+    <script src="js/underscore-min.js"></script>
+    <script src="js/moment-2.2.1.js"></script>
+    <script src="js/clndr.js"></script>
+    <script src="js/site.js"></script>
+    <!--End Calender-->
+
+
+    <link href="css/fans.css?v=1.1" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+        .tdzjp {
+            color: #999999;
+            padding: 0 0 0 10px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: left;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!--container-->
+    <div class="container">
+        <!--main-content-->
+        <h1>拼車app</h1>
+        <div class="main-content">
+
+
+            <div class="top-header">
+                <!--top-nav-->
+                <div class="col-md-8 top-nav">
+                    <span class="menu"> <img src="images/icon.png" alt=""></span>
+                    <ul class="res">
+                        <li><a href="#home"><i class="glyphicon glyphicon-user"> </i> 帳號</a></li>
+                        <li><a class="active" href="#"><i class="glyphicon glyphicon-cog"> </i> 設定</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-envelope"> </i> 訊息 <div class="rate">99</div></a></li>
+                    </ul>
+                    <script>
+                        $("span.menu").click(function () {
+                            $("ul.res").slideToggle(300, function () {
+                                // Animation complete.
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+
+
+
+
+        
+            <div class="col-md-6 mid-tabs">
+                <div id="tabs" class="tabs">
+                    <nav>
+                        <div class="sub-buttons">
+                            <a href="#" class="hvr-sweep-to-right button"><img src="images/owner.png" align="top" />找司機</a>
+
+                            <a href="#" class="hvr-bounce-to-right button"><img src="images/cum.png" align="top" />找乘客</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        
+
+
+
+
+                <div class="main-skills">
+                    <!--skill-one-->
+                    <div class="col-md-4 skill-one">
+
+                        <div class="content">
+                            <div class="skill-inner">
+                                <div class="ttl">
+                                    <img src="images/coin1.png" /><span>司機資訊</span>
+
+                                </div>
+
+
+
+
+                                <div class="col-md-4 first-one">
+                                    <div class="first-one-inner lost">
+                                        <div class="here">
+                                            <div class="here-bottom">
+
+                                                <img src="images/syl.jpg" alt="">
+                                                <h6>沈小琳</h6>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="deals">
+                                            <div class="sap_tabs">
+                                                <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                                                    <ul class="resp-tabs-list">
+                                                        <li class="resp-tab-item" aria-controls="tab_item-0" role="tab">About me</li>
+                                                        <li class="resp-tab-item" aria-controls="tab_item-0" role="tab">Messages</li>
+                                                        <li class="resp-tab-item " aria-controls="tab_item-0" role="tab">Add Friend</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                            <ul class="list">
+                                                <!---->
+
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>從：</th>
+                                                            <td><span class="tdzjp"><?= areainfoReturn($zjpinfo['start']);?></span></td>
+                                                            <th>到：</th>
+                                                            <td><span class="tdzjp"><?= areainfoReturn($zjpinfo['end']);?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>聯絡人</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['name']?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>手機</th>
+                                                            <td><a class="tel" href="tel:<?= $zjpinfo['phone']?>"><span class="tdzjp">點擊撥號</span></a></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>費用</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['money']?>（元）</span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>餘座</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['zuowei']?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>車型</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['chexing']?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>出發</th>
+                                                            <td><span class="tdzjp"><?php echo date('H:i',$zjpinfo['gameover']);?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>途經</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['tujing']?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                <li>
+                                                    <table  border="0" cellspacing="0" cellpadding="0" class="kuang">
+                                                        <tr>
+                                                            <th>描述</th>
+                                                            <td><span class="tdzjp"><?= $zjpinfo['cont']?></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </li>
+                                                </>
+                                                </>
+                                                <!---->
+                                            </ul>
+                                            <a href="#" class="hvr-trim button">加入行程</a>
+
+
+                                            <?php include "footer.html";?>
+
+
+
+
+
+
+                                            <div class="clearfix"> </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+                            </div>
+            <!--//container-->
+</body>
+</html>
+
